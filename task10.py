@@ -47,5 +47,6 @@ for j in range(100):
 aliases = {function_cycle: 'цикл', function_recurcive: 'рекурсия'}
 b = benchmark(funcs, arguments, argument_name, function_aliases=aliases)
 b.plot()
-plt.show(b)
-plt.savefig('benchmark.png')
+plt.savefig('bench.png')
+
+
