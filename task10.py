@@ -41,12 +41,12 @@ print(function_recurcive(num))
 
 funcs = [function_cycle, function_recurcive]
 arguments = {}
-for j in range(100):
+for j in range(num):
     arguments['j'+str(j)]=j
     argument_name = 'Числа'
 aliases = {function_cycle: 'цикл', function_recurcive: 'рекурсия'}
 b = benchmark(funcs, arguments, argument_name, function_aliases=aliases)
 b.plot()
-plt.savefig('bench.png')
+plt.savefig('benchmark.png')
 
 
